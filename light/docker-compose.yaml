@@ -1,0 +1,24 @@
+services:
+  celestia-light:
+    image: ghcr.io/celestiaorg/celestia-node:v0.18.2-mocha
+    container_name: light
+    env_file: .env
+    volumes:
+      - ./scripts/start.sh:/celestia/start.sh:ro
+      - ./data:/celestia
+    user: root
+    environment:
+      - NODE_TYPE=${NODE_TYPE:-light}
+      - P2P_NETWORK=${NETWORK:-mocha}
+      - RPC_URL=${RPC_URL:-rpc-mocha.pops.one}
+      - HOME_DIR=${HOME_DIR:-/celestia}
+    ports:
+      - "2121:2121"
+      - "2121:2121/udp"
+      - "26658:26658" # RPC (TCP)
+      - "26659:26659" # RPC GATEWAY (TCP)
+    restart: unless-stopped
+    entrypoint: /celestia/start.sh
+    #command: "-f /dev/null"
+    #entrypoint: /usr/bin/tail
+    #tty: true
