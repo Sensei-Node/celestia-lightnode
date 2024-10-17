@@ -1,4 +1,4 @@
-# Celestia Light node runner
+# Celestia Light Node runner
 
 This tutorial will guide you through setting up a Celestia light node, which will allow you to perform data availability sampling (DAS) on Celestia's data availability (DA) network.
 
@@ -8,15 +8,14 @@ Light nodes ensure data availability. This is the most common way to interact wi
 
 ### Step 1 - Clone the repo 
 
-``` git clone https://github.com/Sensei-Node/celestia-lightnode ```
+```shell
+git clone https://github.com/Sensei-Node/celestia-lightnode
+```
 
 ### Step 2 - Prepare config and run
 
+```shell
+cd celestia-lightnode/light && cp default.env .env && docker compose up
 ```
-cd celestia-light/light && cp default.env .env && docker compose up
-```
 
-The node is running
-
-
-
+The node is up and running..
