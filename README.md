@@ -6,16 +6,20 @@ Light nodes ensure data availability. This is the most common way to interact wi
 
 ## How tu run
 
-### Step 1 - Clone the repo 
+### i) Clone the repo 
 
 ```shell
 git clone https://github.com/Sensei-Node/celestia-lightnode
 ```
 
-### Step 2 - Prepare config and run
+### ii) Prepare config and run
 
 ```shell
 cd celestia-lightnode/light && cp default.env .env && docker compose up
 ```
 
-The node is up and running..
+✅ The node is up and running..
+
+# Contributing
+ 
+Made with ❤️ by [Sensei Team](https://github.com/orgs/Sensei-Node/people)
