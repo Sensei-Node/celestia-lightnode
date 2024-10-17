@@ -8,7 +8,7 @@ Light nodes ensure data availability. This is the most common way to interact wi
 
 ### Step 1 - Clone the repo 
 
-git clone of this repo
+``` git clone https://github.com/Sensei-Node/celestia-lightnode ```
 
 ### Step 2 - Prepare config and run
 
