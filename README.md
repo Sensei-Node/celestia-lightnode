@@ -21,5 +21,7 @@ cd celestia-lightnode/light && cp default.env .env && docker compose up
 ✅ The node is up and running..
 
 # Contributing
+
+- Contributions are welcome. If you have any suggestions for improvements, please open a [Pull Request](https://github.com/Sensei-Node/celestia-lightnode/pulls).
  
 Made with ❤️ by [Sensei Team](https://github.com/orgs/Sensei-Node/people)
